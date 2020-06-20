@@ -7,5 +7,6 @@
 	<classpathentry kind="lib" path="/Users/sagardas/Downloads/mysql-connector-java-8.0.15.jar"/>
 	<classpathentry kind="lib" path="/Users/sagardas/Downloads/org.slf4j.jar"/>
 	<classpathentry kind="lib" path="/Users/sagardas/Downloads/slf4j-simple-1.6.1.jar"/>
+	<classpathentry kind="lib" path="/Users/sagardas/Downloads/gson-2.8.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

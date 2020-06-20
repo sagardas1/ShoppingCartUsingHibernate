@@ -3,6 +3,8 @@ package org.hibernate;
 import org.hibernate.alpha.dto.UserDetails;
 import org.hibernate.cfg.Configuration;
 
+import com.google.gson.Gson;
+
 public class HibernateTest {
 
 	public static void main(String[] args) {
@@ -15,11 +17,14 @@ public class HibernateTest {
 
 		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 		Session s = sessionFactory.openSession();
-		s.beginTransaction();
-		s.save(details);
-		s.getTransaction().commit();
-		s.close();
-
+		//to save data in data base
+//		s.beginTransaction();
+//		s.save(details);
+//		s.getTransaction().commit();
+//		s.close();
+s.beginTransaction();
+	UserDetails details2=(UserDetails) s.get(UserDetails.class, 1);
+	System.out.println(new Gson().toJson(details2));
 	}
 
 }
