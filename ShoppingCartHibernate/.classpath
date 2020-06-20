@@ -3,6 +3,9 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/Hibernate"/>
-	<classpathentry kind="lib" path="/Users/sagardas/Downloads/waste/mysql-connector-java-5.1.21.jar"/>
+	<classpathentry kind="lib" path="/Users/sagardas/Downloads/lombok-1.16.10.jar"/>
+	<classpathentry kind="lib" path="/Users/sagardas/Downloads/mysql-connector-java-8.0.15.jar"/>
+	<classpathentry kind="lib" path="/Users/sagardas/Downloads/org.slf4j.jar"/>
+	<classpathentry kind="lib" path="/Users/sagardas/Downloads/slf4j-simple-1.6.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
