@@ -1,10 +1,11 @@
 package org.hibernate;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import org.hibernate.alpha.dto.Address;
 import org.hibernate.alpha.dto.UserDetails;
 import org.hibernate.cfg.Configuration;
-
-import com.google.gson.Gson;
 
 public class HibernateTest {
 
@@ -19,8 +20,16 @@ public class HibernateTest {
 		address.setPincode(560095);
 		address.setState("Karnataka");
 		address.setStreet("banglore");
-		details.setAddress(address);
-
+		
+		
+		Address address1=new Address();
+		address1.setPincode(560091);
+		address1.setState("Karnataka");
+		address1.setStreet("Maratheli");
+		Set<Address> addressSet=new HashSet<Address>();
+		addressSet.add(address);
+		addressSet.add(address1);
+		details.setAddressList(addressSet);
 		SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
 		Session s = sessionFactory.openSession();
 	//	 to save data in data base
